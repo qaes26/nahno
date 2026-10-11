@@ -160,18 +160,23 @@ img {
   display: flex;
   align-items: center;
   gap: 0.9rem;
+  flex-shrink: 0;
 }
 
 .nahno-logo-link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 .nahno-logo-img {
-  height: 48px;
+  height: 52px;
   width: auto;
+  max-width: 140px;
   object-fit: contain;
+  flex-shrink: 0;
+  display: block;
   transition: transform var(--transition-fast);
 }
 
@@ -181,34 +186,40 @@ img {
 
 .brand-divider {
   width: 1.5px;
-  height: 36px;
+  height: 38px;
   background: var(--border-light);
+  flex-shrink: 0;
 }
 
 .university-partnership-badge {
   display: flex;
   flex-direction: column;
   line-height: 1.25;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .university-partnership-badge .partner-label {
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 0.74rem;
+  font-weight: 700;
   color: var(--color-primary-dark);
+  white-space: nowrap;
 }
 
 .university-partnership-badge .univ-name {
-  font-size: 0.92rem;
+  font-size: 0.96rem;
   font-weight: 800;
   color: var(--color-navy);
+  white-space: nowrap;
 }
 
 /* روابط شريط التنقل */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.4rem;
+  gap: 1.2rem;
   list-style: none;
+  flex-shrink: 1;
 }
 
 .nav-link {
@@ -2256,8 +2267,27 @@ section {
 }
 
 /* ==========================================================================
-   التوافق الفائق مع شاشات الهواتف والأجهزة الذكية (Mobile Responsive)
+   التوافق الفائق مع شاشات الهواتف والأجهزة الذكية والأجهزة اللوحية
    ========================================================================== */
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .nav-links {
+    gap: 0.85rem;
+  }
+  .nav-link {
+    font-size: 0.86rem;
+  }
+  .nav-actions {
+    gap: 0.45rem;
+  }
+  .nav-actions .btn {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.82rem;
+  }
+  .brand-wrapper {
+    gap: 0.65rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -2275,37 +2305,113 @@ section {
   .calculator-card {
     grid-template-columns: 1fr;
   }
-  .certificate-layout {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media (max-width: 768px) {
+  html {
+    font-size: 14.5px;
+  }
+
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+  }
+
   .container {
     padding-inline: 1rem;
+    width: 100%;
+    max-width: 100%;
   }
 
-  /* إخفاء روابط سطح المكتب وإظهار زر القائمة */
-  .nav-links,
-  .nav-actions .btn-outline {
-    display: none;
+  /* شريط التنقل العلوي المدمج للهاتف والتابلت */
+  .site-header {
+    height: 68px;
   }
+
+  .nav-container {
+    height: 68px;
+  }
+
+  /* إخفاء روابط سطح المكتب والأزرار العريضة في شريط الرأس لإعطاء الشعار أقصى مساحة */
+  .nav-links,
+  .nav-actions .btn {
+    display: none !important;
+  }
+
   .mobile-toggle-btn {
     display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+  }
+
+  /* منطقة الشعار والجامعة في الموبايل - واضحة وبارزة وبدون أي تداخل */
+  .brand-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .nahno-logo-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .nahno-logo-img {
+    height: 46px;
+    width: auto;
+    max-width: 130px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .brand-divider {
+    width: 1.5px;
+    height: 30px;
+    background: var(--border-light);
+    flex-shrink: 0;
+  }
+
+  .university-partnership-badge {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    min-width: 0;
+  }
+
+  .university-partnership-badge .partner-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .university-partnership-badge .univ-name {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--color-navy);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   /* درج التنقل باللمس في الموبايل */
   .mobile-nav-drawer {
     display: flex;
     position: fixed;
-    top: 80px;
+    top: 68px;
     right: 0;
     width: 100%;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 68px);
     overflow-y: auto;
     background: #FFFFFF;
     border-bottom: 2px solid var(--color-primary);
@@ -2339,54 +2445,193 @@ section {
     margin-top: 0.75rem;
   }
 
-  /* تعديلات الهيرو في الهواتف */
+  /* ضبط المسافات العمودية للأقسام لتكون مريحة ومتناسقة على الهاتف */
+  section {
+    padding: 2.25rem 0 !important;
+  }
+
+  .section-header {
+    margin: 0 auto 1.5rem !important;
+  }
+
+  .section-tag {
+    font-size: 0.76rem;
+    padding: 0.3rem 0.75rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.45rem !important;
+  }
+
+  .section-subtitle {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* تعديلات وتناسق قسم الهيرو في الهواتف */
   .hero-section {
-    padding: 2.5rem 0 3.5rem;
+    padding: 1.5rem 0 2.25rem !important;
+  }
+
+  .hero-badge {
+    font-size: 0.76rem;
+    padding: 0.35rem 0.75rem;
+    margin-bottom: 0.85rem;
   }
 
   .hero-title {
-    font-size: 1.95rem;
-    line-height: 1.3;
+    font-size: 1.45rem !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-desc {
+    font-size: 0.88rem !important;
+    line-height: 1.65 !important;
+    margin-bottom: 1.25rem !important;
   }
 
   .hero-buttons {
     flex-direction: column;
     width: 100%;
+    gap: 0.65rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero-buttons .btn {
     width: 100%;
     justify-content: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.92rem;
   }
 
   .hero-stats-row {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
+    gap: 0.5rem;
+    padding-top: 1rem;
     text-align: center;
   }
 
   .stat-item .stat-num {
-    font-size: 1.45rem;
+    font-size: 1.3rem;
   }
 
   .stat-item .stat-label {
-    font-size: 0.74rem;
+    font-size: 0.72rem;
   }
 
-  /* بطاقات الأقسام في عمود واحد للهواتف */
-  .inu-cards-grid,
-  .tracks-grid,
-  .instructions-grid,
-  .values-grid,
-  .rules-columns {
+  .hero-visual-card {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .passport-header {
+    padding-bottom: 0.75rem;
+  }
+
+  .passport-partner-info h4 {
+    font-size: 0.88rem;
+  }
+
+  .passport-body {
+    padding: 0.85rem;
+  }
+
+  .passport-row {
+    font-size: 0.82rem;
+  }
+
+  .floating-volunteer-badge {
+    padding: 0.65rem 0.75rem;
+  }
+
+  /* قسم عن المنصة وقيم العمل التطوعي */
+  .about-lead {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-text {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+
+  .nahno-partners-box {
+    padding: 0.95rem;
+  }
+
+  .values-grid {
     grid-template-columns: 1fr;
-    gap: 1.15rem;
+    gap: 0.85rem;
+  }
+
+  .value-card {
+    padding: 1rem 0.9rem;
+  }
+
+  .value-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .value-title {
+    font-size: 0.92rem;
+  }
+
+  .value-desc {
+    font-size: 0.82rem;
+  }
+
+  /* قسم نحن في جامعة إربد وبنر البروتوكول */
+  .inu-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .inu-feature-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .feature-card-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .feature-card-title {
+    font-size: 1.05rem;
+  }
+
+  .feature-card-desc {
+    font-size: 0.86rem;
+    line-height: 1.6;
   }
 
   .protocol-banner {
     grid-template-columns: 1fr;
-    padding: 1.75rem;
+    padding: 1.35rem 1.15rem;
+    gap: 1rem;
     border-radius: var(--radius-lg);
+  }
+
+  .protocol-banner h3 {
+    font-size: 1.22rem;
+    line-height: 1.35;
+  }
+
+  .protocol-banner p {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
   }
 
   .protocol-banner-action {
@@ -2397,108 +2642,291 @@ section {
     width: 100%;
   }
 
-  /* حاسبة الساعات في الهواتف */
-  .calculator-form-side,
-  .calculator-result-side {
-    padding: 1.5rem;
+  /* مجالات التطوع */
+  .track-filters {
+    gap: 0.35rem;
+    margin-bottom: 1.35rem;
   }
 
-  /* الشهادة المعتمدة في الهواتف */
-  .certificate-paper {
-    padding: 1.5rem 0.85rem;
-    border-width: 6px;
+  .filter-btn {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.78rem;
   }
 
-  .cert-header {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+  .tracks-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  .cert-header .cert-org {
-    text-align: center !important;
+  .track-card {
+    padding: 1.25rem 1rem;
   }
 
-  .cert-title-group h3 {
+  .track-icon {
+    width: 42px;
+    height: 42px;
     font-size: 1.15rem;
   }
 
-  .cert-student-name {
-    font-size: 1.2rem;
-    padding: 0.1rem 0.85rem;
+  .track-title {
+    font-size: 1.05rem;
   }
 
-  .cert-footer {
-    flex-direction: column;
+  .track-desc {
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+
+  /* حاسبة الساعات في الهواتف */
+  .calculator-card {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-form-side,
+  .calculator-result-side {
+    padding: 1.35rem 1.15rem;
+  }
+
+  .result-tier-title {
+    font-size: 1.3rem;
+  }
+
+  .result-tier-subtitle {
+    font-size: 0.82rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .result-stats-list {
+    padding: 0.85rem;
+    gap: 0.65rem;
+  }
+
+  /* تعليمات وإرشادات التطوع للطلبة */
+  .instructions-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .instruction-stage-card {
+    padding: 1.35rem 1.15rem;
+  }
+
+  .stage-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .stage-title {
+    font-size: 1.08rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .stage-desc {
+    font-size: 0.84rem;
+    line-height: 1.6;
+    margin-bottom: 1.15rem;
+  }
+
+  .instruction-steps-list {
+    gap: 0.85rem;
+  }
+
+  .instruction-steps-list li {
+    gap: 0.65rem;
+    font-size: 0.84rem;
+  }
+
+  .instruction-rules-box {
+    padding: 1.25rem 1rem;
+  }
+
+  .rules-header {
     gap: 0.75rem;
+    margin-bottom: 1.15rem;
   }
 
-  /* الشات بوت في الهواتف (شاشة متكاملة مريحة جداً للمستخدم) */
+  .rules-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .rules-header h4 {
+    font-size: 1.02rem;
+  }
+
+  .rules-header p {
+    font-size: 0.78rem;
+  }
+
+  .rules-columns {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .rule-item {
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+
+  /* الأسئلة الشائعة */
+  .faq-list {
+    gap: 0.65rem;
+  }
+
+  .faq-question {
+    padding: 0.9rem 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.84rem;
+    line-height: 1.65;
+  }
+
+  /* التذييل في الهواتف */
+  .site-footer {
+    padding: 2.25rem 0 1.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.84rem;
+  }
+
+  .footer-links-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .footer-links {
+    gap: 0.45rem;
+  }
+
+  .footer-links li a {
+    font-size: 0.84rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.85rem;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+  }
+
+  .curator-badge {
+    justify-content: center;
+    font-size: 0.82rem;
+  }
+
+  /* الشات بوت في الهواتف - زر عائم أنيق وبدون تلميح يغطي الشاشة */
   .chatbot-fab-container {
     bottom: 16px;
     left: 16px;
   }
 
+  .chatbot-fab-tooltip {
+    display: none !important;
+  }
+
   .chatbot-toggle-btn {
-    width: 54px;
-    height: 54px;
-    font-size: 1.35rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
   }
 
   .chatbot-window {
     width: calc(100vw - 24px);
     left: 12px;
     right: 12px;
-    bottom: 80px;
+    bottom: 74px;
     height: 75vh;
-    max-height: 540px;
+    max-height: 520px;
     border-radius: var(--radius-lg);
   }
 
-  /* التذييل في الهواتف */
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .quick-prompts-wrapper {
+    padding: 0.5rem 0.85rem;
   }
 
-  .footer-bottom-bar {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .curator-badge {
-    justify-content: center;
+  .quick-prompt-chip {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.6rem;
   }
 
   /* نافذة البروتوكول في الهواتف */
   .protocol-modal-header {
-    padding: 1rem 1.25rem;
+    padding: 0.95rem 1.15rem;
   }
 
   .protocol-modal-body {
-    padding: 1.25rem;
+    padding: 1.15rem;
   }
 
   .protocol-modal-footer {
-    padding: 1rem 1.25rem;
+    padding: 0.95rem 1.15rem;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.65rem;
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-stats-row {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
+  html {
+    font-size: 13.5px;
   }
-  
+
+  .nav-container {
+    height: 64px;
+  }
+
+  .site-header {
+    height: 64px;
+  }
+
+  .mobile-nav-drawer {
+    top: 64px;
+    max-height: calc(100vh - 64px);
+  }
+
+  .brand-wrapper {
+    gap: 0.5rem;
+  }
+
   .nahno-logo-img {
-    height: 40px;
+    height: 42px;
+    max-width: 110px;
   }
-  
+
+  .brand-divider {
+    height: 26px;
+  }
+
+  .university-partnership-badge .partner-label {
+    font-size: 0.64rem;
+  }
+
   .university-partnership-badge .univ-name {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-stats-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.35rem;
+  }
+
+  .stat-item .stat-num {
+    font-size: 1.2rem;
+  }
+
+  .stat-item .stat-label {
+    font-size: 0.68rem;
   }
 }
