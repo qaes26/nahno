@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>منصة نَحْنُ (Nahno) للتطوع | التمثيل الرسمي في جامعة إربد الأهلية</title>
+  <meta name="description" content="البوابة الرسمية والبروتوكول المتكامل لمنصة نَحْنُ للتطوع بالشراكة مع جامعة إربد الأهلية وعمادة شؤون الطلبة لتوثيق الساعات التطوعية المعتمدة رسمياً وتمكين الكفاءات الطلابية.">
+  <meta name="keywords" content="منصة نحن, تطوع, جامعة إربد الأهلية, ساعات تطوعية, عمادة شؤون الطلبة, إربد, مؤسسة ولي العهد, يونيسف, قيس الجازي">
+  <meta name="author" content="إعداد: قيس الجازي">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="منصة نَحْنُ للتطوع | جامعة إربد الأهلية">
+  <meta property="og:description" content="البروتوكول الرسمي وبوابة توثيق الساعات التطوعية المعتمدة لطلبة جامعة إربد الأهلية.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_JO">
+
+  <!-- الخطوط العربية والإنجليزية -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- مكتبة الأيقونات Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- أنماط CSS المخصصة -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       شريط التنقل العلوي (Navbar)
+       ========================================================================== -->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- شعار منصة نحن وشراكة جامعة إربد الأهلية -->
+      <div class="brand-wrapper">
+        <a href="#hero" class="nahno-logo-link" title="منصة نَحْنُ للتطوع">
+          <img src="assets/images/nahno-logo.png" alt="شعار منصة نحن للتطوع" class="nahno-logo-img" id="nahnoLogo">
+        </a>
+        <div class="brand-divider"></div>
+        <div class="university-partnership-badge">
+          <span class="partner-label">التمثيل والشراكة الرسمية</span>
+          <span class="univ-name">جامعة إربد الأهلية</span>
+        </div>
+      </div>
+
+      <!-- روابط شريط التنقل للشاشات الكبيرة -->
+      <nav aria-label="التنقل الرئيسي">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+          <li><a href="#about" class="nav-link">عن المنصة</a></li>
+          <li><a href="#partnership" class="nav-link">نحن في الجامعة</a></li>
+          <li><a href="#tracks" class="nav-link">مجالات التطوع</a></li>
+          <li><a href="#calculator" class="nav-link">حاسبة الساعات</a></li>
+          <li><a href="#instructions" class="nav-link">تعليمات التطوع</a></li>
+          <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+        </ul>
+      </nav>
+
+      <!-- أزرار الإجراء السريع والتحكم -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-outline btn-sm" data-open-protocol title="استعراض بروتوكول الشراكة المعتمد">
+          <i class="fa-solid fa-file-shield"></i>
+          البروتوكول الرسمي
+        </button>
+        <a href="https://www.nahno.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="navRegisterBtn">
+          <i class="fa-solid fa-user-plus"></i>
+          سجل معنا الآن
+        </a>
+        <button type="button" class="mobile-toggle-btn" id="mobileNavToggle" aria-label="فتح القائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- قائمة الموبايل المنسدلة المتوافقة تماماً مع الهواتف -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <a href="#hero" class="nav-link">الرئيسية</a>
+      <a href="#about" class="nav-link">عن المنصة</a>
+      <a href="#partnership" class="nav-link">نحن في جامعة إربد الأهلية</a>
+      <a href="#tracks" class="nav-link">مجالات التطوع</a>
+      <a href="#calculator" class="nav-link">حاسبة الساعات والأثر</a>
+      <a href="#instructions" class="nav-link">تعليمات وإرشادات التطوع</a>
+      <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+      <div class="mobile-drawer-actions">
+        <button type="button" class="btn btn-outline btn-sm" data-open-protocol style="width:100%;">
+          <i class="fa-solid fa-file-shield"></i> البروتوكول الرسمي
+        </button>
+        <a href="https://www.nahno.org" target="_blank" class="btn btn-primary btn-sm" style="width:100%;">
+          <i class="fa-solid fa-user-plus"></i> سجل عبر منصة نحن
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       القسم الرئيسي الترحيبي (Hero Section)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    
+    <div class="container hero-grid">
+      
+      <!-- النص الترحيبي والتوجيهي -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-icon"><i class="fa-solid fa-handshake-angle"></i></span>
+          <span>الشراكة الاستراتيجية الرسمية | عمادة شؤون الطلبة</span>
+          <span class="pulse-dot"></span>
+        </div>
+
+        <h1 class="hero-title">
+          ساعتك التطوعية.. <br>
+          <span class="highlight-text">أثرٌ في المجتمع</span> وبصمةٌ في <span class="univ-accent">جامعة إربد الأهلية</span>
+        </h1>
+
+        <p class="hero-desc">
+          مرحباً بكم في البوابة الرسمية لتمثيل <strong>منصة نَحْنُ (Nahno)</strong> داخل صرح <strong>جامعة إربد الأهلية</strong>. معاً لتوثيق ساعاتك التطوعية رسمياً، وصقل مهاراتك القيادية، والمساهمة الفاعلة في رفعة الوطن وخدمة المجتمع الأردني تحت مظلة اعتماد أكاديمي موثوق.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://www.nahno.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="heroCtaBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+            انضم الآن عبر منصة نحن
+          </a>
+          <button type="button" class="btn btn-outline btn-lg" data-open-protocol id="heroProtocolBtn">
+            <i class="fa-solid fa-scroll"></i>
+            البروتوكول الرسمي للاعتماد
+          </button>
+          <a href="#instructions" class="btn btn-accent btn-lg" id="heroInstructionsBtn">
+            <i class="fa-solid fa-book-bookmark"></i>
+            تعليمات كيفية التطوع
+          </a>
+        </div>
+
+        <!-- إحصائيات حية وسريعة -->
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-num" data-target="3850" data-prefix="+">0</span>
+            <span class="stat-label">ساعة تطوعية معتمدة</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="1420" data-prefix="+">0</span>
+            <span class="stat-label">طالب وطالبة متطوعين</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="52" data-prefix="+">0</span>
+            <span class="stat-label">مبادرة وفعالية جامعية</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- البطاقة البصرية لجواز التطوع الجامعي المعتمد -->
+      <div class="hero-visual-card">
+        <div class="hero-card-pattern"></div>
+        <div class="protocol-passport-card">
+          
+          <div class="passport-header">
+            <div class="passport-partner-info">
+              <div class="mini-seal">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div>
+                <h4>جامعة إربد الأهلية</h4>
+                <p>عمادة شؤون الطلبة - دائرة النشاطات</p>
+              </div>
+            </div>
+            <span class="badge-official-chip">
+              <i class="fa-solid fa-circle-check"></i>
+              بروتوكول معتمد
+            </span>
+          </div>
+
+          <div class="passport-body">
+            <div class="passport-row">
+              <span class="key"><i class="fa-regular fa-id-card"></i> السجل التطوعي:</span>
+              <span class="val">موثق برمز QR وطني</span>
+            </div>
+            <div class="passport-row">
+              <span class="key"><i class="fa-solid fa-clock-rotate-left"></i> اعتماد الساعات:</span>
+              <span class="val" style="color:var(--color-primary-dark);">خدمة مجتمع معتمدة</span>
+            </div>
+            <div class="passport-row">
+              <span class="key"><i class="fa-solid fa-stamp"></i> جهات الشراكة:</span>
+              <span class="val">نوَى × يونيسف × وزارة الشباب</span>
+            </div>
+            <div class="passport-row">
+              <span class="key"><i class="fa-solid fa-certificate"></i> التكريم الأكاديمي:</span>
+              <span class="val" style="color:var(--color-accent);">شهادة وأوسمة تميز</span>
+            </div>
+          </div>
+
+          <!-- بطاقة عينة المتطوع المعتمد -->
+          <div class="floating-volunteer-badge">
+            <div class="volunteer-avatar-circle">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div>
+              <h5>طالب متطوع معتمد</h5>
+              <p>سفير منصة نحن - جامعة إربد الأهلية</p>
+            </div>
+          </div>
+
+          <div class="stamp-ribbon">
+            <span><i class="fa-solid fa-award"></i> وسام التميز الجامعي</span>
+            <span>nahno.org | inu.edu.jo</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       قسم: عن منصة نَحْنُ (About Nahno)
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-heart-pulse"></i> المبادرة الوطنية الرائدة</span>
+        <h2 class="section-title">عن منصة <span class="text-gradient">نَحْنُ (Nahno)</span> للتطوع</h2>
+        <p class="section-subtitle">المنصة الوطنية الأردنية الموحدة لتطوع ومشاركة الشباب، نحو مجتمع مترابط وعطاء شبابي لا ينضب.</p>
+      </div>
+
+      <div class="about-grid">
+        
+        <div class="about-info-col">
+          <p class="about-lead">
+            أُطلقت منصة "نَحْنُ" استجابةً للرؤى الملكية السامية في تمكين الشباب الأردني وغرس قيم التطوع والمواطنة الفاعلة في صلب مسيرتهم الأكاديمية والمجتمعية.
+          </p>
+          <p class="about-text">
+            تعمل المنصة كجسرٍ حيوي يربط بين طاقات الطلبة ومؤسسات المجتمع المدني والقطاعين العام والخاص، لتوفير فرص تطوعية نوعية تضمن حفظ حقوق المتطوع، وتوثيق ساعاته في سجل وطني موثوق يرافقه طيلة مسيرته الأكاديمية والمهنية.
+          </p>
+
+          <div class="nahno-partners-box">
+            <div class="partners-box-title">
+              <i class="fa-solid fa-handshake"></i>
+              الشراكة الاستراتيجية التأسيسية:
+            </div>
+            <div class="partners-tag-list">
+              <span class="partner-pill">مؤسسة ولي العهد (منصة نوَى)</span>
+              <span class="partner-pill">منظمة الأمم المتحدة للطفولة (يونيسف)</span>
+              <span class="partner-pill">وزارة الشباب الأردنية</span>
+              <span class="partner-pill">جامعة إربد الأهلية (الشريك الأكاديمي)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- شبكة قيم وأهداف المنصة -->
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="value-title">التوثيق والاعتماد</h3>
+            <p class="value-desc">حفظ الساعات التطوعية رقمياً وتوثيقها بشهادات رسمية معتمدة قابلة للتحقق الفوري.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3 class="value-title">صقل المهارات</h3>
+            <p class="value-desc">اكتساب خبرات ميدانية في إدارة الفعاليات والقيادة والعمل الجماعي وحل المشكلات.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon"><i class="fa-solid fa-users"></i></div>
+            <h3 class="value-title">المسؤولية المجتمعية</h3>
+            <p class="value-desc">المساهمة المباشرة في تنمية محافظة إربد والمحافظات المجاورة وتعزيز التكافل الإنساني.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3 class="value-title">التميز الأكاديمي</h3>
+            <p class="value-desc">احتساب الساعات التطوعية ضمن متطلبات التخرج وسجل الأنشطة غير الصفية المعتمدة.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       قسم: منصة نحن في جامعة إربد الأهلية (INU Partnership)
+       ========================================================================== -->
+  <section class="inu-section" id="partnership">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-building-columns"></i> عمادة شؤون الطلبة</span>
+        <h2 class="section-title">منصة نحن في <span class="text-gradient">جامعة إربد الأهلية</span></h2>
+        <p class="section-subtitle">شراكة أكاديمية متجذرة لتمثيل المنصة داخل الحرم الجامعي وتوفير بيئة تطوعية مثالية لجميع طلبة الكليات.</p>
+      </div>
+
+      <!-- ميزات الشراكة في الجامعة -->
+      <div class="inu-cards-grid">
+        
+        <div class="inu-feature-card">
+          <div class="feature-card-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <h3 class="feature-card-title">احتساب الساعات للتخرج</h3>
+          <p class="feature-card-desc">
+            تعترف عمادة شؤون الطلبة في جامعة إربد الأهلية بالساعات التطوعية الموثقة عبر منصة نحن لاحتسابها كخدمة مجتمع وساعات لامنهجية تدعم مسيرة التخرج وسجل التميز.
+          </p>
+          <div class="feature-tag-list">
+            <span class="feature-tag">معتمد أكاديمياً</span>
+            <span class="feature-tag">خدمة مجتمع</span>
+            <span class="feature-tag">عمادة شؤون الطلبة</span>
+          </div>
+        </div>
+
+        <div class="inu-feature-card">
+          <div class="feature-card-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3 class="feature-card-title">مبادرات وفعاليات الحرم الجامعي</h3>
+          <p class="feature-card-desc">
+            تنظيم ورشات ومؤتمرات وحملات تشجير وتنظيم حفلات التخرج واليوم المفتوح بمشاركة وإدارة مباشرة من طلبة جامعة إربد الأهلية المتطوعين.
+          </p>
+          <div class="feature-tag-list">
+            <span class="feature-tag">تنظيم الفعاليات</span>
+            <span class="feature-tag">ريادة طلابية</span>
+            <span class="feature-tag">أعمال ميدانية</span>
+          </div>
+        </div>
+
+        <div class="inu-feature-card">
+          <div class="feature-card-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h3 class="feature-card-title">فرسان التطوع والتكريم السنوي</h3>
+          <p class="feature-card-desc">
+            حفل سنوي لتكريم الطلبة الأكثر عطاءً ومنحهم أوسمة التميز البرونزية والفضية والذهبية والماسية وشهادات تقدير رسمية موقعة من رئاسة الجامعة والمنصة.
+          </p>
+          <div class="feature-tag-list">
+            <span class="feature-tag">أوسمة الشرف</span>
+            <span class="feature-tag">شهادات تقدير</span>
+            <span class="feature-tag">تمثيل الجامعة</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- بنر البروتوكول الرسمي -->
+      <div class="protocol-banner">
+        <div class="protocol-banner-pattern"></div>
+        <div>
+          <span class="protocol-status-badge">
+            <i class="fa-solid fa-certificate"></i>
+            وثيقة البروتوكول والميثاق المعتمد (2026)
+          </span>
+          <h3>البروتوكول الرسمي لتوثيق واعتماد الساعات التطوعية</h3>
+          <p>
+            تحدد هذه الوثيقة الرسمية الإطار التنظيمي والقانوني بين منصة نحن وجامعة إربد الأهلية لضمان حقوق الطالب، آليات التحقق من المشاركة، شروط منح الأوسمة، وكيفية تصدير الكشوفات المعتمدة إلى عمادة شؤون الطلبة.
+          </p>
+        </div>
+        <div class="protocol-banner-action">
+          <button type="button" class="btn btn-primary btn-lg" data-open-protocol style="background:#00A3C4; box-shadow:0 4px 18px rgba(0,163,196,0.5);">
+            <i class="fa-solid fa-file-contract"></i>
+            عرض وثيقة البروتوكول كاملة
+          </button>
+          <span style="font-size:0.85rem; color:#94A3B8;">إعداد: قيس الجازي | عمادة شؤون الطلبة</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       قسم: مجالات التطوع (Volunteer Tracks)
+       ========================================================================== -->
+  <section class="tracks-section" id="tracks">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-cubes"></i> مسارات متخصصة</span>
+        <h2 class="section-title">مجالات التطوع <span class="text-gradient">المتاحة للطلبة</span></h2>
+        <p class="section-subtitle">اختر المسار الأقرب لشغفك وتخصصك، وابدأ بترك أثر حقيقي في جامعتك ومجتمعك.</p>
+      </div>
+
+      <!-- أزرار التصفية -->
+      <div class="track-filters">
+        <button type="button" class="filter-btn active" data-filter="all">جميع المجالات</button>
+        <button type="button" class="filter-btn" data-filter="campus">داخل الحرم الجامعي</button>
+        <button type="button" class="filter-btn" data-filter="field">ميداني ومجتمعي</button>
+        <button type="button" class="filter-btn" data-filter="digital">تقني وعن بعد</button>
+      </div>
+
+      <!-- بطاقات المجالات -->
+      <div class="tracks-grid">
+        
+        <!-- مسار 1 -->
+        <div class="track-card" data-category="campus">
+          <div class="track-header">
+            <div class="track-icon teal"><i class="fa-solid fa-calendar-check"></i></div>
+            <span class="track-category-tag">داخل الحرم الجامعي</span>
+          </div>
+          <h3 class="track-title">تنظيم الفعاليات والمؤتمرات</h3>
+          <p class="track-desc">المشاركة في إدارة وتنظيم المؤتمرات العلمية، مهرجانات استقبال الطلبة الجدد، المعارض الفنية، ومراسم حفلات التخرج الجامعية.</p>
+          <div class="track-meta-row">
+            <span class="track-meta-item"><i class="fa-regular fa-clock"></i> 5 - 25 ساعة للفعالية</span>
+            <span class="track-meta-item"><i class="fa-solid fa-certificate"></i> وسام المنظم</span>
+          </div>
+        </div>
+
+        <!-- مسار 2 -->
+        <div class="track-card" data-category="field">
+          <div class="track-header">
+            <div class="track-icon green"><i class="fa-solid fa-leaf"></i></div>
+            <span class="track-category-tag">ميداني ومجتمعي</span>
+          </div>
+          <h3 class="track-title">المبادرات البيئية والاستدامة</h3>
+          <p class="track-desc">حملات تشجير حدائق الجامعة ومحافظة إربد، مبادرات فرز وتدوير النفايات، وورش التوعية البيئية لمكافحة التغير المناخي.</p>
+          <div class="track-meta-row">
+            <span class="track-meta-item"><i class="fa-regular fa-clock"></i> 10 - 30 ساعة</span>
+            <span class="track-meta-item"><i class="fa-solid fa-certificate"></i> سفير البيئة الخضراء</span>
+          </div>
+        </div>
+
+        <!-- مسار 3 -->
+        <div class="track-card" data-category="campus">
+          <div class="track-header">
+            <div class="track-icon orange"><i class="fa-solid fa-book-open-reader"></i></div>
+            <span class="track-category-tag">داخل الحرم الجامعي</span>
+          </div>
+          <h3 class="track-title">الدعم الأكاديمي والتعليمي</h3>
+          <p class="track-desc">مساعدة زملائك في شرح المواد الصعبة، دعم الطلبة من ذوي الإعاقة، وإدارة جلسات المذاكرة الجماعية التفاعلية.</p>
+          <div class="track-meta-row">
+            <span class="track-meta-item"><i class="fa-regular fa-clock"></i> 15 - 40 ساعة</span>
+            <span class="track-meta-item"><i class="fa-solid fa-certificate"></i> المرشد الأكاديمي</span>
+          </div>
+        </div>
+
+        <!-- مسار 4 -->
+        <div class="track-card" data-category="field">
+          <div class="track-header">
+            <div class="track-icon purple"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <span class="track-category-tag">ميداني ومجتمعي</span>
+          </div>
+          <h3 class="track-title">التمكين المجتمعي وحملات الإغاثة</h3>
+          <p class="track-desc">توزيع الطرود الغذائية في شهر رمضان، دعم الجمعيات الخيرية في إربد، تنظيم أيام ترفيهية للأيتام وكبار السن.</p>
+          <div class="track-meta-row">
+            <span class="track-meta-item"><i class="fa-regular fa-clock"></i> 10 - 35 ساعة</span>
+            <span class="track-meta-item"><i class="fa-solid fa-certificate"></i> وسام العطاء الإنساني</span>
+          </div>
+        </div>
+
+        <!-- مسار 5 -->
+        <div class="track-card" data-category="digital">
+          <div class="track-header">
+            <div class="track-icon blue"><i class="fa-solid fa-laptop-code"></i></div>
+            <span class="track-category-tag">تقني وعن بعد</span>
+          </div>
+          <h3 class="track-title">الدعم التقني والإعلامي</h3>
+          <p class="track-desc">تصميم البوسترات والرسومات التوعوية، إدارة منصات التواصل الاجتماعي للمبادرات، وتوثيق الفعاليات تصويراً وإنتاجاً للمحتوى.</p>
+          <div class="track-meta-row">
+            <span class="track-meta-item"><i class="fa-regular fa-clock"></i> 10 - 50 ساعة</span>
+            <span class="track-meta-item"><i class="fa-solid fa-certificate"></i> وسام المبدع الرقمي</span>
+          </div>
+        </div>
+
+        <!-- مسار 6 -->
+        <div class="track-card" data-category="campus">
+          <div class="track-header">
+            <div class="track-icon red"><i class="fa-solid fa-kit-medical"></i></div>
+            <span class="track-category-tag">داخل الحرم الجامعي</span>
+          </div>
+          <h3 class="track-title">الإسعاف الأولي والتوعية الصحية</h3>
+          <p class="track-desc">المشاركة في أيام الفحص الطبي المجاني بالتعاون مع كليات التمريض والصيدلة، وحملات التبرع بالدم داخل الجامعة.</p>
+          <div class="track-meta-row">
+            <span class="track-meta-item"><i class="fa-regular fa-clock"></i> 8 - 25 ساعة</span>
+            <span class="track-meta-item"><i class="fa-solid fa-certificate"></i> مسعف متطوع</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       حاسبة الساعات والأثر التطوعي التفاعلية (Calculator)
+       ========================================================================== -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-chart-line"></i> أداة تفاعلية حية</span>
+        <h2 class="section-title">حاسبة الساعات <span class="text-gradient">والأثر التطوعي</span></h2>
+        <p class="section-subtitle">حرّك المؤشر لمعرفة مستواك التكريمي، الشهادة المستحقة، والنقاط المضافة لملفك الأكاديمي في جامعة إربد الأهلية.</p>
+      </div>
+
+      <div class="calculator-card">
+        
+        <!-- جانب الإدخال -->
+        <div class="calculator-form-side">
+          
+          <div class="calc-group">
+            <label class="calc-label" for="hoursSlider">
+              <i class="fa-regular fa-clock" style="color:var(--color-primary);"></i>
+              عدد الساعات التطوعية المنجزة أو المستهدفة:
+            </label>
+            <div class="hours-display-box" id="hoursValDisplay">40 ساعة تطوعية</div>
+            <div class="range-slider-wrapper">
+              <input type="range" min="1" max="150" value="40" class="hours-slider" id="hoursSlider" aria-label="شريط الساعات التطوعية">
+              <div class="slider-marks">
+                <span>1 ساعة</span>
+                <span>30 ساعة</span>
+                <span>60 ساعة</span>
+                <span>100 ساعة</span>
+                <span>150+ ساعة</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label" for="calcTrackSelect">
+              <i class="fa-solid fa-shapes" style="color:var(--color-accent);"></i>
+              مجال النشاط الأساسي:
+            </label>
+            <select class="calc-select" id="calcTrackSelect">
+              <option value="campus">تنظيم فعاليات ومؤتمرات الجامعة</option>
+              <option value="community">خدمة مجتمعية وإغاثية في إربد</option>
+              <option value="green">مبادرات بيئية وتشجير</option>
+              <option value="academic">دعم وإرشاد أكاديمي طلابي</option>
+              <option value="digital">دعم تقني وتصميم وإعلام رقمي</option>
+            </select>
+          </div>
+
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
+            💡 يتم احتساب هذه الساعات مباشرة في عمادة شؤون الطلبة بموجب البروتوكول الرسمي المشترك مع منصة نحن الوطنية.
+          </p>
+
+        </div>
+
+        <!-- جانب النتيجة والوسام -->
+        <div class="calculator-result-side">
+          <div class="tier-badge-visual" id="resultTierIcon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="result-tier-title" id="resultTierTitle">المتطوع الفضي (النشط)</h3>
+          <p class="result-tier-subtitle" id="resultTierSubtitle">مستوى متقدم يمنحك اعتماداً رسمياً لساعات خدمة المجتمع</p>
+
+          <div class="result-stats-list">
+            <div class="result-stat-row">
+              <span>نوع الشهادة:</span>
+              <span id="resultCertType">شهادة كفاءة معتمدة بـ QR</span>
+            </div>
+            <div class="result-stat-row">
+              <span>الاعتماد الأكاديمي:</span>
+              <span id="resultPoints">60 نقطة نشاط جامعي</span>
+            </div>
+            <div class="result-stat-row">
+              <span>حالة التكريم:</span>
+              <span style="color:#10B981;">مؤهل لحفل التكريم السنوي</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       قسم: تعليمات وإرشادات كيفية التطوع المعتمدة للطلبة (Volunteering Instructions)
+       ========================================================================== -->
+  <section class="instructions-section" id="instructions">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-compass"></i> دليلك الأكاديمي والميداني الشامل</span>
+        <h2 class="section-title">تعليمات وإرشادات <span class="text-gradient">كيفية التطوع للطلبة</span></h2>
+        <p class="section-subtitle">إرشادات تفصيلية تغطي مسارك التطوعي من لحظة التسجيل وحتى اعتماد ساعاتك واستلام شهادتك الرسمية من عمادة شؤون الطلبة.</p>
+      </div>
+
+      <!-- شبكة بطاقات التعليمات المفصلة -->
+      <div class="instructions-grid">
+        
+        <!-- البطاقة 1: قبل التطوع -->
+        <div class="instruction-stage-card">
+          <div class="stage-badge stage-1">
+            <i class="fa-solid fa-1"></i> المرحلة الأولى: التسجيل والارتباط
+          </div>
+          <h3 class="stage-title">إنشاء الحساب واختيار الجامعة</h3>
+          <p class="stage-desc">الخطوة التأسيسية التي تضمن ربط جهودك التطوعية بسجلك الأكاديمي الرسمي.</p>
+          
+          <ul class="instruction-steps-list">
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>الدخول إلى منصة نحن الوطنية:</strong>
+                <p>قم بزيارة الرابط الرسمي <a href="https://www.nahno.org" target="_blank" style="color:var(--color-primary);font-weight:700;text-decoration:underline;">nahno.org</a> والضغط على "تسجيل متطوع جديد".</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>تعبئة البيانات الشخصية:</strong>
+                <p>أدخل اسمك المطابق للهوية الجامعية ورقم هاتفك والبريد الإلكتروني المعتمد.</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>اختيار (جامعة إربد الأهلية):</strong>
+                <p>في حقل المؤسسة التعليمية، اختر بدقة <em>"جامعة إربد الأهلية"</em> لربط حسابك بعمادة شؤون الطلبة وتفعيل احتساب الساعات التلقائي.</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>تصفح الفرص والتقديم:</strong>
+                <p>استعرض الفعاليات المعلنة داخل الحرم الجامعي أو محافظة إربد واضغط على <strong>(تطوع الآن)</strong>.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- البطاقة 2: أثناء الفعالية -->
+        <div class="instruction-stage-card">
+          <div class="stage-badge stage-2">
+            <i class="fa-solid fa-2"></i> المرحلة الثانية: الحضور الميداني
+          </div>
+          <h3 class="stage-title">الالتزام وتوثيق التواجد الفعلي</h3>
+          <p class="stage-desc">ضوابط الحضور الميداني التي تضمن توثيق ساعاتك بنزاهة ومهنية.</p>
+          
+          <ul class="instruction-steps-list">
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>الالتزام بالمواعيد المحددة:</strong>
+                <p>التواجد في موقع النشاط قبل 15 دقيقة من الموعد المقرر ولقاء المشرف الميداني للفعالية.</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>مسح رمز الحضور الإلكتروني (QR Check-in):</strong>
+                <p>احرص على مسح رمز QR الخاص بالفعالية بواسطة هاتفك الذكي أو التوقيع على كشف الحضور الورقي المعتمد لدى المشرف.</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>التمثيل اللائق بميثاق الجامعة:</strong>
+                <p>الالتزام بأخلاقيات العمل التطوعي وارتداء الوشاح أو الشارة الخاصة بالمنصة وتأدية المهام الموكلة بإيجابية.</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>تسجيل الانصراف بعد انتهاء النشاط:</strong>
+                <p>تأكيد مغادرة الفعالية لدى المشرف الميداني لضمان احتساب إجمالي الساعات الفعلية المنجزة.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- البطاقة 3: بعد التطوع والاعتماد -->
+        <div class="instruction-stage-card">
+          <div class="stage-badge stage-3">
+            <i class="fa-solid fa-3"></i> المرحلة الثالثة: الاعتماد والشهادة
+          </div>
+          <h3 class="stage-title">المصادقة واستلام الشهادة الرسمية</h3>
+          <p class="stage-desc">كيفية تحويل ساعاتك التطوعية إلى نقاط أكاديمية وشهادات موثقة رسمياً.</p>
+          
+          <ul class="instruction-steps-list">
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>المصادقة خلال 24 - 48 ساعة:</strong>
+                <p>يقوم المشرف الميداني وعمادة شؤون الطلبة بالمصادقة الرقمية على الساعات لتظهر مباشرة في حسابك على المنصة.</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>الاعتماد الأكاديمي كخدمة مجتمع:</strong>
+                <p>تُسجل الساعات تلقائياً في ملفك الجامعي وتُعتمد ضمن متطلب خدمة المجتمع والأنشطة اللامنهجية في الجامعة.</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>تحميل الشهادة الإلكترونية المعتمدة:</strong>
+                <p>يمكنك من ملفك الشخصي تنزيل شهادة تطوع رسمية موشحة بأختام المنصة والجامعة ومزودة برمز تحقق وطني QR.</p>
+              </div>
+            </li>
+            <li>
+              <div class="step-bullet"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <strong>الترشح للأوسمة والتكريم:</strong>
+                <p>كلما زادت ساعاتك ترتقي في المستويات (برونزي، فضي، ذهبي، وماسي) وتترشح لحفل التكريم السنوي في الجامعة.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- بنر شروط وضوابط التطوع الجامعي ومقر العمادة -->
+      <div class="instruction-rules-box">
+        <div class="rules-header">
+          <div class="rules-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div>
+            <h4>شروط وأحكام التطوع المعتمدة في جامعة إربد الأهلية</h4>
+            <p>معايير عامة تضمن توفير بيئة تطوعية آمنة ومحفزة لجميع الطلبة</p>
+          </div>
+        </div>
+
+        <div class="rules-columns">
+          <div class="rule-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>متاح لجميع الطلبة:</strong> لا يُشترط أي معدل تراكمي، التطوع متاح لطلبة كافة الكليات والمراحل الدراسية.</span>
+          </div>
+          <div class="rule-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>المقر الميداني للتنسيق:</strong> عمادة شؤون الطلبة - مبنى النشاطات الطلابية - الطابق الأول (الأحد إلى الخميس 9:00 ص - 3:00 م).</span>
+          </div>
+          <div class="rule-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>حقوق المتطوع:</strong> يحظى المتطوع بالحماية والتأمين المعنوي والتوجيه والتدريب والتقدير الرسمي لساعاته.</span>
+          </div>
+          <div class="rule-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span><strong>الشفافية والتحقق:</strong> كافة الساعات والشهادات خاضعة لنظام التدقيق الوطني الموحد لمنصة نحن.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ==========================================================================
+       قسم: الأسئلة الشائعة (FAQ Accordion)
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> إجابات شافية</span>
+        <h2 class="section-title">الأسئلة الشائعة <span class="text-gradient">عن المنصة والجامعة</span></h2>
+        <p class="section-subtitle">كل ما يدور في ذهنك حول التطوع، احتساب الساعات، والبروتوكول الأكاديمي.</p>
+      </div>
+
+      <div class="faq-list">
+        
+        <!-- س 1 -->
+        <div class="faq-item active">
+          <button type="button" class="faq-question">
+            <span>ما هي منصة نَحْنُ (Nahno) بالتحديد؟</span>
+            <span class="faq-icon-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              منصة "نَحْنُ" هي المنصة الوطنية الأردنية لتطوع ومشاركة الشباب، أُطلقت بشراكة استراتيجية بين "نوَى" (إحدى مبادرات مؤسسة ولي العهد) ومنظمة الأمم المتحدة للطفولة (يونيسف) وبالشراكة مع وزارة الشباب، بهدف توحيد الجهود التطوعية في المملكة وتوثيق الساعات رسمياً في سجل موثوق.
+            </p>
+          </div>
+        </div>
+
+        <!-- س 2 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>كيف أحسب ساعاتي التطوعية داخل جامعة إربد الأهلية؟</span>
+            <span class="faq-icon-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              تتم الآلية بالتقديم على الفرص المتاحة لجامعة إربد الأهلية عبر الموقع الإلكتروني لمنصة نحن، ثم الحضور وتأكيد التسجيل لدى المشرف الميداني للفعالية. بعد انتهاء النشاط، تقوم عمادة شؤون الطلبة بالمصادقة عليها لتظهر تلقائياً في ملفك الشخصي ورصيدك الأكاديمي.
+            </p>
+          </div>
+        </div>
+
+        <!-- س 3 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>هل الساعات معتمدة رسمياً في السجل الأكاديمي ومتطلبات التخرج؟</span>
+            <span class="faq-icon-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              نعم، وفق بروتوكول التعاون المعتمد، تعترف عمادة شؤون الطلبة بالساعات التطوعية الموثقة عبر منصة نحن وتُحتسب ضمن متطلب خدمة المجتمع وسجل التميز والأنشطة اللامنهجية، وتمنح الطالب شهادة معتمدة مزودة برمز تحقق وطني QR.
+            </p>
+          </div>
+        </div>
+
+        <!-- س 4 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>كيف أسجل في الفرص التطوعية المتاحة؟</span>
+            <span class="faq-icon-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              ببساطة: أنشئ حسابك على nahno.org، اختر جامعة إربد الأهلية من قائمة المؤسسات التعليمية، تصفح الفرص المتاحة واضغط على "تطوع الآن". ستصلك تفاصيل الموعد والمكان من خلال إشعار في حسابك أو رسالة نصية.
+            </p>
+          </div>
+        </div>
+
+        <!-- س 5 -->
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>ما هي شروط التطوع وهل يشترط معدل تراكمي معين؟</span>
+            <span class="faq-icon-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              لا يشترط أي معدل تراكمي! التطوع متاح لجميع طلبة جامعة إربد الأهلية في جميع الكليات والمراحل الدراسية. الشرط الوحيد هو امتلاك حساب فعال على منصة نحن، والالتزام بمواعيد الفعالية وأخلاقيات العمل الجامعي.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       التذييل (Footer) - متضمن عبارة "إعداد: قيس الجازي"
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- العمود 1: الشعار والتعريف -->
+        <div class="footer-brand">
+          <a href="#hero" style="display:inline-block;">
+            <img src="assets/images/nahno-logo.png" alt="شعار منصة نحن" style="height:50px; background:#FFFFFF; padding:4px 10px; border-radius:8px;">
+          </a>
+          <p>
+            منصة نَحْنُ (nahno.org) هي المنصة الوطنية الأردنية لتطوع ومشاركة الشباب، بالشراكة مع جامعة إربد الأهلية لتوثيق الساعات، بناء القدرات، وصناعة قيادات شبابية واعدة في خدمة الوطن.
+          </p>
+          <div class="social-icons-row">
+            <a href="https://www.facebook.com/nahno.org" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nahno_org" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/nahno_org" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/nahno" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- العمود 2: روابط سريعة -->
+        <div>
+          <h4 class="footer-links-title">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="#about"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> عن منصة نحن</a></li>
+            <li><a href="#partnership"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> نحن في جامعة إربد</a></li>
+            <li><a href="#tracks"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> مجالات التطوع</a></li>
+            <li><a href="#calculator"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> حاسبة الساعات</a></li>
+            <li><a href="#instructions"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> تعليمات التطوع</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود 3: الوثائق واللوائح -->
+        <div>
+          <h4 class="footer-links-title">اللوائح والبروتوكول</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-open-protocol><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> بروتوكول الساعات المعتمدة</a></li>
+            <li><a href="#" data-open-protocol><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> ميثاق المتطوع الجامعي</a></li>
+            <li><a href="#faq"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> الأسئلة واللوائح الأكاديمية</a></li>
+          </ul>
+        </div>
+
+        <!-- العمود 4: شركاء المنصة -->
+        <div>
+          <h4 class="footer-links-title">الشركاء الوطنيون</h4>
+          <p style="font-size:0.86rem; color:#94A3B8; line-height:1.7; margin-bottom:1rem;">
+            مبادرة وطنية مشتركة بين:
+          </p>
+          <ul style="list-style:none; font-size:0.86rem; color:#CBD5E1; display:flex; flex-direction:column; gap:0.5rem;">
+            <li><i class="fa-solid fa-check" style="color:var(--color-primary);"></i> مؤسسة ولي العهد (نوَى)</li>
+            <li><i class="fa-solid fa-check" style="color:var(--color-primary);"></i> منظمة الأمم المتحدة للطفولة (يونيسف)</li>
+            <li><i class="fa-solid fa-check" style="color:var(--color-primary);"></i> وزارة الشباب الأردنية</li>
+            <li><i class="fa-solid fa-check" style="color:var(--color-primary);"></i> جامعة إربد الأهلية (عمادة شؤون الطلبة)</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- شريط التوثيق السفلي متضمناً عبارة: "إعداد: قيس الجازي" -->
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          جميع الحقوق محفوظة © 2026 | منصة نَحْنُ (Nahno) للتطوع بالشراكة مع جامعة إربد الأهلية.
+        </div>
+
+        <!-- العبارة التوثيقية المطلوبة بالمتطلب نصاً وبصرياً -->
+        <div class="curator-badge" id="curatorCreditBadge" title="إعداد هذا النظام والموقع الإلكتروني">
+          <span class="curator-icon"><i class="fa-solid fa-user-check"></i></span>
+          <span>إعداد: <strong>قيس الجازي</strong></span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       الشات بوت التفاعلي الذكي (Floating AI Chatbot Widget)
+       ========================================================================== -->
+  <div class="chatbot-fab-container">
+    <div class="chatbot-fab-tooltip">
+      <i class="fa-solid fa-sparkles" style="color:var(--color-primary);"></i>
+      تحدث مع المساعد الذكي لنحن!
+    </div>
+    
+    <button type="button" class="chatbot-toggle-btn" id="chatbotToggleBtn" aria-label="فتح نافذة المساعد الذكي">
+      <i class="fa-solid fa-comments"></i>
+      <span class="chatbot-badge-alert"></span>
+    </button>
+  </div>
+
+  <!-- نافذة محادثة الشات بوت المتجاوبة مع الهواتف -->
+  <div class="chatbot-window" id="chatbotWindow" role="dialog" aria-labelledby="chatbotHeading">
+    
+    <!-- رأس نافذة الشات -->
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar-frame">
+          <i class="fa-solid fa-robot"></i>
+          <span class="status-dot-active"></span>
+        </div>
+        <div class="chat-header-text">
+          <h4 id="chatbotHeading">المساعد الذكي لمنصة نحن</h4>
+          <p>متصل الآن | جامعة إربد الأهلية ⚡</p>
+        </div>
+      </div>
+
+      <div class="chat-header-actions">
+        <button type="button" class="chat-action-btn" id="chatbotClearBtn" title="مسح المحادثة">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+        <button type="button" class="chat-action-btn" id="chatbotCloseBtn" title="إغلاق المحادثة">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- جسم المحادثة والرسائل -->
+    <div class="chat-body" id="chatbotBody">
+      <!-- رسالة الترحيب التلقائية -->
+      <div class="message-row bot">
+        <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+        <div class="msg-bubble-wrap">
+          <div class="msg-bubble">
+            مرحباً بك في المساعد الذكي لـ <strong>منصة نَحْنُ (Nahno)</strong> في <strong>جامعة إربد الأهلية</strong>! 🤝⚡<br>
+            <small style="color:#00A3C4; font-weight:bold;">مدعوم بالذكاء الاصطناعي الفائق مع تدوير عشوائي للمفاتيح.</small><br><br>
+            أنا جاهز للإجابة عن أسئلتك حول كيفية التطوع، احتساب الساعات المعتمدة، خطوات التسجيل، والبروتوكول الرسمي.
+          </div>
+          <div class="msg-time">الآن</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- شريط الأسئلة المقترحة السريعة بنقرة واحدة -->
+    <div class="quick-prompts-wrapper">
+      <div class="quick-prompts-title">
+        <i class="fa-solid fa-lightbulb"></i>
+        أسئلة سريعة شائعة:
+      </div>
+      <div class="quick-prompts-scroll">
+        <button type="button" class="quick-prompt-chip" data-query="ما هي تعليمات وخطوات التطوع في جامعة إربد الأهلية؟">كيف أتطوع؟</button>
+        <button type="button" class="quick-prompt-chip" data-query="كيف أحسب ساعاتي التطوعية داخل جامعة إربد الأهلية؟">كيف أحسب ساعاتي؟</button>
+        <button type="button" class="quick-prompt-chip" data-query="هل الساعات معتمدة رسمياً من الجامعة؟">هل الساعات معتمدة؟</button>
+        <button type="button" class="quick-prompt-chip" data-query="ما هي شروط التطوع؟">شروط التطوع</button>
+        <button type="button" class="quick-prompt-chip" data-query="أين يقع مقر عمادة شؤون الطلبة لمتابعة الساعات؟">مقر عمادة شؤون الطلبة</button>
+      </div>
+    </div>
+
+    <!-- شريط إدخال الرسالة والإرسال -->
+    <div class="chat-footer">
+      <form class="chat-input-form" id="chatbotForm">
+        <input type="text" class="chat-input" id="chatbotInput" placeholder="اكتب سؤالك هنا..." autocomplete="off">
+        <button type="submit" class="chat-send-btn" aria-label="إرسال الرسالة">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- ==========================================================================
+       نافذة البروتوكول الرسمي الكاملة (Official Protocol Modal)
+       ========================================================================== -->
+  <div class="protocol-modal-overlay" id="protocolModalOverlay">
+    <div class="protocol-modal-window" role="document">
+      
+      <div class="protocol-modal-header">
+        <div class="protocol-modal-title">
+          <i class="fa-solid fa-file-contract"></i>
+          <div>
+            <h3>البروتوكول الرسمي لتوثيق واعتماد الساعات التطوعية</h3>
+            <p style="font-size:0.8rem; color:#94A3B8;">شراكة التمثيل الرسمي بين منصة نحن وعمادة شؤون الطلبة - جامعة إربد الأهلية</p>
+          </div>
+        </div>
+        <button type="button" class="chat-action-btn" id="protocolCloseBtn" style="font-size:1.2rem; color:#FFFFFF;">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="protocol-modal-body">
+        
+        <div class="doc-stamp-header">
+          <div>
+            <h4 style="color:var(--color-navy); font-weight:900;">وثيقة تنظيمية رسمية رقم (INU-NAHNO-2026/01)</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted);">المملكة الأردنية الهاشمية - محافظة إربد</p>
+          </div>
+          <div style="text-align:left;">
+            <span class="badge-official-chip">ساري المفعول لعام 2026</span>
+          </div>
+        </div>
+
+        <div class="doc-clause-block">
+          <h4><i class="fa-solid fa-circle-check" style="color:var(--color-primary);"></i> المادة الأولى: التعريفات والأهداف العامة</h4>
+          <p>
+            يهدف هذا البروتوكول إلى مأسسة العمل التطوعي الطلابي داخل جامعة إربد الأهلية تحت مظلة <strong>منصة نَحْنُ (nahno.org)</strong>، بالشراكة مع مؤسسة ولي العهد ومنظمة الأمم المتحدة للطفولة (يونيسف) ووزارة الشباب، لتحويل طاقات الطلبة إلى إنجازات مجتمعية وتنموية موثقة رسمياً.
+          </p>
+        </div>
+
+        <div class="doc-clause-block">
+          <h4><i class="fa-solid fa-circle-check" style="color:var(--color-primary);"></i> المادة الثانية: آلية احتساب واعتماد الساعات</h4>
+          <ul>
+            <li>تُحتسب الساعة التطوعية لكل (60 دقيقة) من العمل الميداني الفعلي المثبت لدى مشرف النشاط المعتمد.</li>
+            <li>يتم مسح رمز الحضور الإلكتروني (QR Check-in) أو التوقيع على كشف الحضور الورقي والمطابقة عبر المنصة.</li>
+            <li>تقوم عمادة شؤون الطلبة بالمصادقة على الساعات خلال 48 ساعة من انتهاء الفعالية لتظهر في حساب الطالب.</li>
+          </ul>
+        </div>
+
+        <div class="doc-clause-block">
+          <h4><i class="fa-solid fa-circle-check" style="color:var(--color-primary);"></i> المادة الثالثة: المعادلة الأكاديمية وخدمة المجتمع</h4>
+          <p>
+            تعتمد عمادة شؤون الطلبة كشوفات الساعات الصادرة عبر منصة نحن لاحتسابها ضمن متطلب خدمة المجتمع الإجباري أو الاختياري وسجل الأنشطة غير الصفية المعتمدة في ملف التخرج الخاص بالطالب.
+          </p>
+        </div>
+
+        <div class="doc-clause-block">
+          <h4><i class="fa-solid fa-circle-check" style="color:var(--color-primary);"></i> المادة الرابعة: الأوسمة والشهادات التكريمية</h4>
+          <ul>
+            <li><strong>وسام المتطوع المبادر:</strong> عند إتمام 20 ساعة تطوعية.</li>
+            <li><strong>وسام المتطوع النشط (الفضي):</strong> عند إتمام 50 ساعة تطوعية معتمدة.</li>
+            <li><strong>وسام المتطوع القيادي (الذهبي):</strong> عند إتمام 100 ساعة تطوعية معتمدة.</li>
+            <li><strong>فارس التطوع الجامعي (الماسي):</strong> عند إتمام 150 ساعة تطوعية، مع درع تكريمي خاص من رئاسة الجامعة.</li>
+          </ul>
+        </div>
+
+        <div class="doc-clause-block">
+          <h4><i class="fa-solid fa-circle-check" style="color:var(--color-primary);"></i> المادة الخامسة: الإشراف الإداري والأكاديمي</h4>
+          <p>
+            تتولى عمادة شؤون الطلبة - دائرة النشاطات الطلابية - متابعة تطبيق بنود هذا البروتوكول، والتنسيق مع عمادات الكليات لتسهيل مشاركة الطلبة، تذليل أي عقبات، وتصدير التقارير الدورية لرئاسة الجامعة وإدارة منصة نحن الوطنية.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="protocol-modal-footer">
+        <span style="font-size:0.85rem; color:var(--text-muted);">
+          <i class="fa-solid fa-signature"></i> إعداد: قيس الجازي | عمادة شؤون الطلبة
+        </span>
+        <div style="display:flex; gap:0.5rem;">
+          <button type="button" class="btn btn-outline btn-sm" id="protocolPrintBtn">
+            <i class="fa-solid fa-print"></i>
+            طباعة الوثيقة
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ملفات JavaScript -->
+  <script src="js/app.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/protocol.js"></script>
+</body>
+</html>
