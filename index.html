@@ -52,7 +52,6 @@
           <li><a href="#about" class="nav-link">عن المنصة</a></li>
           <li><a href="#partnership" class="nav-link">نحن في الجامعة</a></li>
           <li><a href="#tracks" class="nav-link">مجالات التطوع</a></li>
-          <li><a href="#calculator" class="nav-link">حاسبة الساعات</a></li>
           <li><a href="#instructions" class="nav-link">تعليمات التطوع</a></li>
           <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
         </ul>
@@ -81,7 +80,6 @@
       <a href="#about" class="nav-link">عن المنصة</a>
       <a href="#partnership" class="nav-link">نحن في جامعة إربد الأهلية</a>
       <a href="#tracks" class="nav-link">مجالات التطوع</a>
-      <a href="#calculator" class="nav-link">حاسبة الساعات والأثر</a>
       <a href="#instructions" class="nav-link">تعليمات وإرشادات التطوع</a>
       <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
       <div class="mobile-drawer-actions">
@@ -464,89 +462,6 @@
     </div>
   </section>
 
-  <!-- ==========================================================================
-       حاسبة الساعات والأثر التطوعي التفاعلية (Calculator)
-       ========================================================================== -->
-  <section class="calculator-section" id="calculator">
-    <div class="container">
-      
-      <div class="section-header">
-        <span class="section-tag"><i class="fa-solid fa-chart-line"></i> أداة تفاعلية حية</span>
-        <h2 class="section-title">حاسبة الساعات <span class="text-gradient">والأثر التطوعي</span></h2>
-        <p class="section-subtitle">حرّك المؤشر لمعرفة مستواك التكريمي، الشهادة المستحقة، والنقاط المضافة لملفك الأكاديمي في جامعة إربد الأهلية.</p>
-      </div>
-
-      <div class="calculator-card">
-        
-        <!-- جانب الإدخال -->
-        <div class="calculator-form-side">
-          
-          <div class="calc-group">
-            <label class="calc-label" for="hoursSlider">
-              <i class="fa-regular fa-clock" style="color:var(--color-primary);"></i>
-              عدد الساعات التطوعية المنجزة أو المستهدفة:
-            </label>
-            <div class="hours-display-box" id="hoursValDisplay">40 ساعة تطوعية</div>
-            <div class="range-slider-wrapper">
-              <input type="range" min="1" max="150" value="40" class="hours-slider" id="hoursSlider" aria-label="شريط الساعات التطوعية">
-              <div class="slider-marks">
-                <span>1 ساعة</span>
-                <span>30 ساعة</span>
-                <span>60 ساعة</span>
-                <span>100 ساعة</span>
-                <span>150+ ساعة</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="calc-group">
-            <label class="calc-label" for="calcTrackSelect">
-              <i class="fa-solid fa-shapes" style="color:var(--color-accent);"></i>
-              مجال النشاط الأساسي:
-            </label>
-            <select class="calc-select" id="calcTrackSelect">
-              <option value="campus">تنظيم فعاليات ومؤتمرات الجامعة</option>
-              <option value="community">خدمة مجتمعية وإغاثية في إربد</option>
-              <option value="green">مبادرات بيئية وتشجير</option>
-              <option value="academic">دعم وإرشاد أكاديمي طلابي</option>
-              <option value="digital">دعم تقني وتصميم وإعلام رقمي</option>
-            </select>
-          </div>
-
-          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">
-            💡 يتم احتساب هذه الساعات مباشرة في عمادة شؤون الطلبة بموجب البروتوكول الرسمي المشترك مع منصة نحن الوطنية.
-          </p>
-
-        </div>
-
-        <!-- جانب النتيجة والوسام -->
-        <div class="calculator-result-side">
-          <div class="tier-badge-visual" id="resultTierIcon">
-            <i class="fa-solid fa-award"></i>
-          </div>
-          <h3 class="result-tier-title" id="resultTierTitle">المتطوع الفضي (النشط)</h3>
-          <p class="result-tier-subtitle" id="resultTierSubtitle">مستوى متقدم يمنحك اعتماداً رسمياً لساعات خدمة المجتمع</p>
-
-          <div class="result-stats-list">
-            <div class="result-stat-row">
-              <span>نوع الشهادة:</span>
-              <span id="resultCertType">شهادة كفاءة معتمدة بـ QR</span>
-            </div>
-            <div class="result-stat-row">
-              <span>الاعتماد الأكاديمي:</span>
-              <span id="resultPoints">60 نقطة نشاط جامعي</span>
-            </div>
-            <div class="result-stat-row">
-              <span>حالة الاعتماد:</span>
-              <span style="color:#10B981;">مؤهل لشهادة تقدير معتمدة</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
 
   <!-- ==========================================================================
        قسم: تعليمات وإرشادات كيفية التطوع المعتمدة للطلبة (Volunteering Instructions)
@@ -835,7 +750,6 @@
             <li><a href="#about"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> عن منصة نحن</a></li>
             <li><a href="#partnership"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> نحن في جامعة إربد</a></li>
             <li><a href="#tracks"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> مجالات التطوع</a></li>
-            <li><a href="#calculator"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> حاسبة الساعات</a></li>
             <li><a href="#instructions"><i class="fa-solid fa-chevron-left" style="font-size:0.7rem;"></i> تعليمات التطوع</a></li>
           </ul>
         </div>

@@ -11,7 +11,6 @@
     initNavbar();
     initMobileNav();
     initStatsCounter();
-    initHoursCalculator();
     initTracksFilter();
     initFaqAccordion();
     initContactForm();
@@ -123,64 +122,6 @@
     if (statsSection) observer.observe(statsSection);
   }
 
-  /* -------------------------------------------------------------------------
-     4. حاسبة الساعات والأثر التطوعي التفاعلية (Hours Impact Calculator)
-     ------------------------------------------------------------------------- */
-  function initHoursCalculator() {
-    const slider = document.getElementById('hoursSlider');
-    const hoursDisplay = document.getElementById('hoursValDisplay');
-    const tierTitle = document.getElementById('resultTierTitle');
-    const tierSubtitle = document.getElementById('resultTierSubtitle');
-    const tierIcon = document.getElementById('resultTierIcon');
-    const certType = document.getElementById('resultCertType');
-    const pointsType = document.getElementById('resultPoints');
-    const trackSelect = document.getElementById('calcTrackSelect');
-
-    if (!slider || !hoursDisplay) return;
-
-    function calculateImpact() {
-      const hours = parseInt(slider.value, 10);
-      hoursDisplay.innerText = `${hours} ساعة تطوعية`;
-
-      let tierName = '';
-      let tierSub = '';
-      let iconClass = '';
-      let cert = '';
-      let points = Math.round(hours * 1.5);
-
-      if (hours < 25) {
-        tierName = 'المتطوع المبتدئ (المبادر)';
-        tierSub = 'خطوتك الأولى في صناعة الأثر والاندماج بالمجتمع الجامعي';
-        iconClass = 'fa-solid fa-seedling';
-        cert = 'شهادة مشاركة تطوعية رقمية معتمدة';
-      } else if (hours < 60) {
-        tierName = 'المتطوع الفضي (النشط)';
-        tierSub = 'مستوى متقدم يمنحك اعتماداً رسمياً لساعات خدمة المجتمع';
-        iconClass = 'fa-solid fa-award';
-        cert = 'شهادة كفاءة تطوعية صادرة عن الجامعة ومنصة نحن';
-      } else if (hours < 120) {
-        tierName = 'المتطوع الذهبي (القيادي)';
-        tierSub = 'مستوى متميز يؤهلك لقيادة المبادرات الميدانية ورئاسة الفرق';
-        iconClass = 'fa-solid fa-medal';
-        cert = 'شهادة تميز قيادي معتمدة بـ QR';
-      } else {
-        tierName = 'المتطوع الاستثنائي المتقدم';
-        tierSub = 'أعلى مستوى تطوعي متقدم للطلبة على مستوى جامعة إربد الأهلية';
-        iconClass = 'fa-solid fa-crown';
-        cert = 'شهادة التميز الجامعي الكبرى + ترشيح للجوائز الوطنية';
-      }
-
-      if (tierTitle) tierTitle.innerText = tierName;
-      if (tierSubtitle) tierSubtitle.innerText = tierSub;
-      if (tierIcon) tierIcon.innerHTML = `<i class="${iconClass}"></i>`;
-      if (certType) certType.innerText = cert;
-      if (pointsType) pointsType.innerText = `${points} نقطة نشاط جامعي`;
-    }
-
-    slider.addEventListener('input', calculateImpact);
-    trackSelect?.addEventListener('change', calculateImpact);
-    calculateImpact();
-  }
 
   /* -------------------------------------------------------------------------
      5. تصفية مجالات التطوع (Tracks Filter)
